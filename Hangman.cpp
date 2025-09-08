@@ -3,8 +3,23 @@
 using namespace std;
 
 
+/*
+Variables Used
+
+Gword = original word to guess
+guessword = Gword which user guesses
+char_word = Gword char which he eneterd
+
+
+
+
+
+*/
+
+
+
 string guessword;
-string word = "gold";
+string word = "goldg";
 int length = word.length();
 int tries_length = 5;
 int tries;
@@ -56,7 +71,14 @@ int main() {
             cout << endl << "you tries are all done" << endl;
             break;
         }
-    }
+        
+        for(i=0; i<=guessword.length(); i++){
+          if(char_word[i]= user_char){
+            cout << "You already guessed this letter."<< endl;
+        }
+      
+    }}
+    
 
 
     if(guessword == word && tries < tries_length ) 
